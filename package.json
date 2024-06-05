@@ -1,0 +1,22 @@
+{
+  "name": "creight-palettes",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0"
+}
