@@ -1,7 +1,7 @@
 import plugin from "tailwindcss/plugin";
 import { shadcnThemes } from "#shadcn-themes";
 
-interface ShadcnPluginOptions {
+export interface ShadcnPluginOptions {
   theme: keyof typeof shadcnThemes;
 }
 
