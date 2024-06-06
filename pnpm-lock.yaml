@@ -87,6 +87,36 @@ importers:
 
   config/typescript: {}
 
+  packages/core:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../config/typescript
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
+  packages/ui:
+    devDependencies:
+      '@repo/core':
+        specifier: workspace:*
+        version: link:../core
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../config/typescript
+      '@types/node':
+        specifier: ^20.14.2
+        version: 20.14.2
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+
 packages:
 
   /@adobe/css-tools@4.4.0:
