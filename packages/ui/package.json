@@ -1,14 +1,10 @@
 {
-  "name": "@creightive/ui",
+  "name": "@repo/ui",
   "version": "0.0.0",
   "description": "",
   "private": true,
-  "main": "index.js",
   "exports": {
-    "./button": {
-      "types": "./atoms/button.tsx",
-      "default": "./dist/button.tsx"
-    }
+    "./button": "./atoms/button/button.tsx"
   },
   "imports": {
     "#icons": "./shared/icons.tsx"
@@ -22,6 +18,7 @@
     "@repo/core": "workspace:*",
     "@repo/theme": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@turbo/gen": "^2.0.1",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "autoprefixer": "^10.4.19",
@@ -31,6 +28,7 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },
+  "peerDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/creightive/palettes.git"
