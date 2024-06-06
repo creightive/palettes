@@ -2,7 +2,7 @@ import { Config } from "tailwindcss";
 import { shadcn } from "@repo/theme/shadcn";
 
 export default {
-  content: [],
+  content: ["./atoms/**/*.tsx"],
   theme: {
     extend: {},
   },

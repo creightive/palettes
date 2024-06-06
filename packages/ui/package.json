@@ -3,16 +3,21 @@
   "version": "0.0.0",
   "description": "",
   "private": true,
+  "sideEffects": [
+    "**/*.css"
+  ],
   "exports": {
+    "./styles.css": "./dist/index.css",
     "./button": "./atoms/button/button.tsx"
   },
   "imports": {
     "#icons": "./shared/icons.tsx"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist"
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/core": "workspace:*",
@@ -28,7 +33,9 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/creightive/palettes.git"
