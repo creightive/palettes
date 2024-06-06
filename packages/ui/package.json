@@ -20,10 +20,15 @@
   },
   "devDependencies": {
     "@repo/core": "workspace:*",
+    "@repo/theme": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
+    "autoprefixer": "^10.4.19",
+    "cva": "1.0.0-beta.1",
+    "postcss": "^8.4.38",
     "react": "^18.3.1",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },
   "repository": {
