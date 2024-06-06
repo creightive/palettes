@@ -1,0 +1,23 @@
+{
+  "name": "@repo/theme",
+  "version": "0.0.0",
+  "description": "Tailwind CSS plugin for the design system",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./shadcn": {
+      "types": "./plugins/shadcn.ts",
+      "default": "./plugins/shadcn.ts"
+    }
+  },
+  "imports": {
+    "#shadcn-themes": "./palettes/shadcn-themes/index.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  }
+}
