@@ -3,14 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "exports": {
-    "./add": {
-      "types": "./math/add.ts",
-      "default": "./dist/add.js"
-    },
-    "./subtract": {
-      "types": "./math/subtract.ts",
-      "default": "./dist/subtract.js"
-    }
+    "./add": "./math/add.ts",
+    "./subtract": "./math/subtract.ts"
   },
   "imports": {
     "#transform": "./utils/transform.ts"
@@ -21,10 +15,6 @@
   },
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc",
     "clean": "rm -rf dist"
-  },
-  "files": [
-    "dist"
-  ]
+  }
 }
