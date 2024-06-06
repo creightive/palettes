@@ -29,6 +29,9 @@ importers:
 
   apps/storybook:
     dependencies:
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -39,6 +42,9 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^1.5.0
         version: 1.5.0(react@18.3.1)
+      '@repo/theme':
+        specifier: workspace:*
+        version: link:../../packages/theme
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../config/typescript
@@ -78,6 +84,9 @@ importers:
       storybook:
         specifier: ^8.1.6
         version: 8.1.6(react-dom@18.3.1)(react@18.3.1)
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.4
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
